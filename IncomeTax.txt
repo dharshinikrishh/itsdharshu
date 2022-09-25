@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class IncomeTax
+{
+	public static void main(String[] args) {
+	 int incomeTax;
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("Enter  the salary");
+	 int salary=sc.nextInt();
+	 int hra=salary*20/100;
+	 System.out.println("HRA="+hra);
+	 int da=salary*40/100;
+	 System.out.println("DA="+da);
+	 int ta=salary*10/100;
+	  System.out.println("TA="+ta);
+	 int annualIncome=salary*12;
+	 System.out.println("annualIncome="+annualIncome);
+	 if(annualIncome<500000)
+	 {
+	     incomeTax=(annualIncome*0);
+	     System.out.println("incomeTax+"+incomeTax);
+	 }
+	 else if(annualIncome>=500000&&annualIncome<1000000)
+	 {
+	     incomeTax=(annualIncome*10/100);
+	     System.out.println("incomeTax="+incomeTax);
+	 }
+	 else if(annualIncome>=1000000&&annualIncome<20000000)
+	 {
+	     incomeTax=(annualIncome*20/100);
+	     System.out.println("incomeTax="+incomeTax);
+	 }
+	 else if(annualIncome>=20000000)
+	 {
+	     incomeTax=(annualIncome*30/100);
+	     System.out.println("incomeTax="+incomeTax);
+     }
+	}
+}
